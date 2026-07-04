@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FiberFlow — your Android crafting companion for knitters and crocheters. Organize yarn stash, patterns, and projects in one cozy place.">
+  <title>FiberFlow — Crafting Companion for Knitters &amp; Crocheters</title>
+  <link rel="icon" type="image/svg+xml" href="assets/FiberFlow-Icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/showcase.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="FiberFlow home">
+        <img src="assets/FiberFlow-Icon.svg" alt="" width="40" height="40" class="brand-icon">
+        <span class="brand-name">FiberFlow</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#showcase">Screenshots</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#download" class="nav-cta">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-block" aria-label="Introduction">
+      <div class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">Android crafting companion</p>
+            <h1>Your yarn, patterns, and projects — organized in one cozy place.</h1>
+            <p class="hero-lead">
+              FiberFlow helps knitters and crocheters catalog stash, import patterns, track work in progress,
+              and craft smarter — even offline at the yarn shop.
+            </p>
+            <div class="hero-actions">
+              <a href="#download" class="btn btn-primary">Get on Google Play</a>
+              <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+            </div>
+          </div>
+          <div class="hero-phone" aria-hidden="true">
+            <figure class="phone-mockup">
+              <div class="phone-bezel">
+                <img src="assets/screenshots/home.jpg" alt="" width="260" height="563">
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stats-grid">
+            <div class="stat-chip stat-teal">
+              <span class="stat-value">Stash</span>
+              <span class="stat-label">Catalog every skein</span>
+            </div>
+            <div class="stat-chip stat-coral">
+              <span class="stat-value">Patterns</span>
+              <span class="stat-label">PDF, web &amp; markup</span>
+            </div>
+            <div class="stat-chip stat-plum">
+              <span class="stat-value">Projects</span>
+              <span class="stat-label">Track your WIPs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="showcase">
+      <div class="container">
+        <header class="section-header">
+          <h2>See FiberFlow in action</h2>
+          <p>A dark, cozy interface built for crafters — stash, patterns, and insights at your fingertips.</p>
+        </header>
+
+        <div class="showcase-grid">
+          <figure class="phone-mockup">
+            <div class="phone-bezel">
+              <img src="assets/screenshots/home.jpg" alt="FiberFlow home screen with stash stats and explore tiles" width="240" height="520" loading="lazy">
+            </div>
+            <figcaption>
+              Home dashboard
+              <span class="phone-caption-detail">Stats, WIPs, and quick links</span>
+            </figcaption>
+          </figure>
+          <figure class="phone-mockup">
+            <div class="phone-bezel">
+              <img src="assets/screenshots/stash.jpg" alt="Yarn stash screen with label scan and shop mode" width="240" height="520" loading="lazy">
+            </div>
+            <figcaption>
+              Yarn stash
+              <span class="phone-caption-detail">Scan labels, filter, shop mode</span>
+            </figcaption>
+          </figure>
+          <figure class="phone-mockup">
+            <div class="phone-bezel">
+              <img src="assets/screenshots/patterns.jpg" alt="Pattern library with PDF import and bookmarks" width="240" height="520" loading="lazy">
+            </div>
+            <figcaption>
+              Pattern library
+              <span class="phone-caption-detail">PDF, web, photo &amp; book capture</span>
+            </figcaption>
+          </figure>
+          <figure class="phone-mockup">
+            <div class="phone-bezel">
+              <img src="assets/screenshots/insights.jpg" alt="Stash insights showing yardage totals and breakdowns" width="240" height="520" loading="lazy">
+            </div>
+            <figcaption>
+              Stash insights
+              <span class="phone-caption-detail">Yardage totals &amp; weight breakdowns</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section-header">
+          <h2>Everything you need at the needles</h2>
+          <p>From label scanning to stash insights — FiberFlow keeps your whole crafting library in your pocket, even offline.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card accent-teal">
+            <h3>Yarn Stash</h3>
+            <p>Catalog every skein with brand, weight, yardage, dye lot, and storage location. Scan yarn band labels with ML Kit OCR to auto-fill details.</p>
+          </article>
+          <article class="feature-card accent-plum">
+            <h3>Pattern Library</h3>
+            <p>Import PDFs, paste website URLs, photograph book patterns, and capture multi-page books with OCR correction. Organize favorites with bookmark tags — WIP, Gift Ideas, Someday, and more.</p>
+          </article>
+          <article class="feature-card accent-coral">
+            <h3>Projects &amp; WIP Queue</h3>
+            <p>Link patterns, yarn, and tools. Track progress, drag-reorder your cast-on queue, add milestone photos, export timeline reels, and recover yardage when you frog a project.</p>
+          </article>
+          <article class="feature-card accent-rose">
+            <h3>Needles &amp; Hooks</h3>
+            <p>Log every needle and hook size you own so you never buy duplicates — filter by type when planning your next make.</p>
+          </article>
+          <article class="feature-card accent-blue">
+            <h3>Stash Matcher</h3>
+            <p>See which saved patterns you can cast on with yarn you already own. Match scores based on weight, yardage, and fiber content.</p>
+          </article>
+          <article class="feature-card accent-teal">
+            <h3>Shop Mode</h3>
+            <p>Offline duplicate check at the yarn store. Search your stash, scan ball-band barcodes, and review a shopping list of yardage your queued projects still need.</p>
+          </article>
+          <article class="feature-card accent-plum">
+            <h3>Pattern Reader</h3>
+            <p>Draw, highlight, add text, erase, and mark rows while you craft. Undo/redo, color picker, row counters, and QR handoff to open the same page on a tablet.</p>
+          </article>
+          <article class="feature-card accent-coral">
+            <h3>Gift List</h3>
+            <p>Track finished pieces available to gift. Assign recipients with occasions and due dates so holiday knitting stays on schedule.</p>
+          </article>
+          <article class="feature-card accent-rose">
+            <h3>Stash Insights</h3>
+            <p>Totals and breakdowns at a glance — yardage by weight, skeins by fiber, miles of yarn on hand, and your longest-stashed skeins.</p>
+          </article>
+          <article class="feature-card accent-blue">
+            <h3>Gauge &amp; Substitution</h3>
+            <p>Convert stitch counts between gauges and check whether one yarn can substitute for another before you cast on.</p>
+          </article>
+          <article class="feature-card accent-teal">
+            <h3>Export &amp; Ravelry</h3>
+            <p>Full backup and restore ZIP, CSV/PDF exports via the share sheet. Connect Ravelry via OAuth to import stash, patterns, queue, and favorites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <header class="section-header">
+          <h2>How FiberFlow works</h2>
+          <p>Three simple steps to go from scattered skeins to a organized crafting workflow.</p>
+        </header>
+
+        <ol class="steps-list">
+          <li class="step-card">
+            <span class="step-number">1</span>
+            <div>
+              <h3>Build your stash</h3>
+              <p>Add yarn manually or scan a label photo to auto-fill brand and weight. Use Shop Mode before buying to avoid duplicates.</p>
+            </div>
+          </li>
+          <li class="step-card">
+            <span class="step-number">2</span>
+            <div>
+              <h3>Import patterns</h3>
+              <p>Bring in PDFs, web links, book photos, or Ravelry patterns. Review auto-detected metadata, mark up as you craft, and hand off to a tablet via QR.</p>
+            </div>
+          </li>
+          <li class="step-card">
+            <span class="step-number">3</span>
+            <div>
+              <h3>Track your projects</h3>
+              <p>Create a project, link stash yarn and tools, reorder your WIP queue, export milestone reels, and recover frogged yardage back to stash.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section download-section" id="download">
+      <div class="container download-inner">
+        <img src="assets/FiberFlow-Icon.svg" alt="" width="96" height="96" class="download-icon">
+        <h2>Ready to cast on?</h2>
+        <p>FiberFlow is available for Android. Download from Google Play and start organizing your crafting life today.</p>
+        <a
+          href="#"
+          class="play-badge play-badge--placeholder"
+          id="play-store-link"
+          aria-disabled="true"
+          title="Google Play link coming soon"
+        >
+          <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true" width="28" height="28">
+            <path fill="currentColor" d="M3.609 1.814L13.792 12 3.61 22.186a1.003 1.003 0 0 1-1.387.29 1 1 0 0 1-.223-.168 1 1 0 0 1-.293-.728V2.71a1 1 0 0 1 .293-.728 1 1 0 0 1 1.61-.168z"/>
+            <path fill="currentColor" d="M15.5 8.5l4.5-2.6a1 1 0 0 1 1.5.866v10.468a1 1 0 0 1-1.5.866l-4.5-2.6-2.792 2.792L20.39 12l-7.682-7.682L15.5 8.5z"/>
+          </svg>
+          <span class="play-badge-text">
+            <span class="play-badge-label">Get it on</span>
+            <span class="play-badge-store">Google Play</span>
+          </span>
+        </a>
+        <p class="download-note" id="play-store-note">Google Play link coming soon — check back after launch.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/FiberFlow-Icon.svg" alt="" width="32" height="32">
+        <span>FiberFlow</span>
+      </div>
+      <p class="footer-tagline">Crafting companion for knitters and crocheters.</p>
+      <p class="footer-copy">&copy; <span id="year"></span> FiberFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
