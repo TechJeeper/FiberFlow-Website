@@ -1,11 +1,7 @@
 (function () {
   "use strict";
 
-  /**
-   * Set your Google Play Store URL here when the app is published.
-   * Example: "https://play.google.com/store/apps/details?id=com.fiberflow.app"
-   */
-  var PLAY_STORE_URL = "";
+  var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.fiberflow.app";
 
   var yearEl = document.getElementById("year");
   if (yearEl) {
