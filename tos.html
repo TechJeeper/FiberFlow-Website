@@ -92,14 +92,17 @@
       <h2>Optional Google Drive backup</h2>
       <p>
         If you connect Google Drive, FiberFlow uses Google OAuth so you can upload a backup ZIP
-        to a FiberFlow folder in your Drive and restore it on another device. This uses the
+        to a FiberFlow folder in your Drive and restore it on another device. With Keep devices
+        in sync on, the app can also pull a newer Drive copy when you open FiberFlow and upload
+        when you leave. This uses the
         <code>drive.file</code> scope, so the app can only access files it creates (the FiberFlow
         folder and <code>fiberflow-backup.zip</code>). It does not get access to the rest of your Drive.
       </p>
       <ul>
         <li>Connecting Drive is optional. You can keep using local backups instead.</li>
         <li>Uploads use your Google Drive storage quota. Large pattern PDFs count against that quota.</li>
-        <li>Restoring from Drive replaces the FiberFlow library currently on that device.</li>
+        <li>Restoring from Drive, or taking the Drive copy during a sync conflict, replaces the FiberFlow library currently on that device.</li>
+        <li>If both a phone and Drive have changes, FiberFlow cannot merge them. You choose which library to keep.</li>
         <li>Disconnecting Drive in the app does not delete the backup file. You must delete it in Drive if you want it gone.</li>
         <li>Google may change, limit, or interrupt Drive access. FiberFlow is not responsible for Google outages, quota limits, or files you delete from Drive.</li>
       </ul>
@@ -117,7 +120,8 @@
       </p>
       <p>
         You grant TechJeeper only the limited permission needed to operate features you choose,
-        such as storing data on your device or uploading a backup you start. We do not claim
+        such as storing data on your device or uploading a backup you start or that Keep devices
+        in sync uploads when you leave the app. We do not claim
         ownership of your crafting library.
       </p>
 
@@ -125,7 +129,9 @@
       <p>
         Optional Ravelry features require a Ravelry account and are subject to
         <a href="https://www.ravelry.com/about/tos" rel="noopener noreferrer" target="_blank">Ravelry&rsquo;s terms</a>.
-        FiberFlow is not affiliated with Ravelry or Google and is not responsible for those services.
+        Connecting Ravelry lets you import library data you choose and add, push, or pull individual
+        yarn and project entries. FiberFlow is not affiliated with Ravelry or Google and is not
+        responsible for those services.
       </p>
 
       <h2>Acceptable use</h2>
@@ -176,6 +182,7 @@
       </div>
       <p class="footer-tagline">Crafting companion for knitters and crocheters.</p>
       <p class="footer-legal">
+        <a href="https://discord.gg/9WdGfetSRp" target="_blank" rel="noopener noreferrer">Discord</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="tos.html" aria-current="page">Terms of Service</a>
       </p>

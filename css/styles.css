@@ -549,6 +549,32 @@ a:hover {
   color: var(--text-secondary);
 }
 
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.community-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  background: var(--ink-card);
+  border: 1px solid var(--outline-variant);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.community-link:hover {
+  color: var(--brand-teal-light);
+  border-color: var(--brand-teal-dark);
+}
+
 .play-badge {
   display: inline-flex;
   align-items: center;

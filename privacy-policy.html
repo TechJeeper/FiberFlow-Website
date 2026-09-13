@@ -83,9 +83,10 @@
       <h2>Summary</h2>
       <p>
         Your yarn stash, patterns, projects, and related crafting data stay on your device by default.
-        Optional Ravelry integration exchanges data with Ravelry only when you connect and choose to import or sync.
-        Optional Google Drive backup uploads a FiberFlow backup ZIP to <em>your</em> Drive only when you connect
-        and choose Upload. We do not operate a FiberFlow cloud server that collects your crafting library.
+        Optional Ravelry integration exchanges data with Ravelry only when you connect and choose to import,
+        add, push, or pull items. Optional Google Drive backup stores a FiberFlow backup ZIP in <em>your</em>
+        Drive when you connect and upload, or automatically when Keep devices in sync is on. We do not operate
+        a FiberFlow cloud server that collects your crafting library.
       </p>
 
       <h2>Information stored on your device</h2>
@@ -120,11 +121,13 @@
         </li>
       </ul>
       <p>
-        When you tap Upload to Drive, FiberFlow writes a ZIP of your local library to that backup file.
+        When you tap Upload to Drive, or when Keep devices in sync is on and you leave the app with unsaved
+        library changes, FiberFlow writes a ZIP of your local library to that backup file.
         The ZIP can include yarn, tools, patterns (including PDFs and photos you imported), projects,
         annotations, and selected app preferences. The file lives in your Google account and counts
-        against your Drive storage. When you tap Restore from Drive, FiberFlow downloads that same
-        backup file and replaces the library on that device.
+        against your Drive storage. When you tap Restore from Drive, or when Keep devices in sync is on
+        and Drive has a newer copy, FiberFlow downloads that same backup file and replaces the library
+        on that device. If both this phone and Drive have changes, the app asks which copy to keep.
       </p>
       <p>
         Access tokens stay on your device. FiberFlow does not run a server that receives or stores your
@@ -158,15 +161,16 @@
       <p>FiberFlow uses the internet when you:</p>
       <ul>
         <li>Import patterns from websites</li>
-        <li>Connect to Ravelry via OAuth and import stash, patterns, queue, favorites, or purchased PDFs you choose</li>
+        <li>Connect to Ravelry via OAuth and import stash, patterns, or projects, or add, push, or pull individual yarn and project entries you choose</li>
         <li>Load pattern thumbnails or other content from external URLs you choose</li>
-        <li>Optionally connect Google Drive and upload or restore a FiberFlow backup you choose</li>
+        <li>Optionally connect Google Drive and upload or restore a FiberFlow backup, including automatic sync when that setting is on</li>
         <li>Optionally send a diagnostic log from Settings</li>
       </ul>
       <p>
         Ravelry integration is optional and governed by
         <a href="https://www.ravelry.com/privacy" rel="noopener noreferrer" target="_blank">Ravelry&rsquo;s privacy policy</a>.
-        When connected, the app exchanges OAuth tokens and requested library data with Ravelry&rsquo;s API according to the permissions you approve.
+        When connected, the app exchanges OAuth tokens and requested library data with Ravelry&rsquo;s API according to the permissions you approve,
+        including imports you start and individual yarn or project entries you add, push, or pull.
       </p>
       <p>
         On-device text recognition may use Google ML Kit components included with the app; processing occurs on your device for supported features.
@@ -222,6 +226,7 @@
       </div>
       <p class="footer-tagline">Crafting companion for knitters and crocheters.</p>
       <p class="footer-legal">
+        <a href="https://discord.gg/9WdGfetSRp" target="_blank" rel="noopener noreferrer">Discord</a>
         <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
         <a href="tos.html">Terms of Service</a>
       </p>
