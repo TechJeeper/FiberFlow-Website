@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FiberFlow privacy policy — how we handle your crafting data on Android.">
+  <meta name="description" content="FiberFlow privacy policy — how we handle your crafting data, optional Google Drive backup, and Ravelry on Android.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1c1d22">
   <link rel="canonical" href="https://fiberflow.techjeeper.com/privacy-policy.html">
@@ -11,7 +11,7 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="FiberFlow">
   <meta property="og:title" content="Privacy Policy — FiberFlow">
-  <meta property="og:description" content="Read how FiberFlow handles yarn stash, pattern, project, and optional Ravelry data on Android.">
+  <meta property="og:description" content="Read how FiberFlow handles yarn stash, pattern, project, Google Drive backup, and optional Ravelry data.">
   <meta property="og:url" content="https://fiberflow.techjeeper.com/privacy-policy.html">
   <meta property="og:image" content="https://fiberflow.techjeeper.com/assets/screenshots/home.jpg">
   <meta property="og:image:alt" content="FiberFlow home screen with stash stats and explore tiles">
@@ -19,15 +19,16 @@
   <meta property="og:image:height" content="2048">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy — FiberFlow">
-  <meta name="twitter:description" content="Read how FiberFlow handles yarn stash, pattern, project, and optional Ravelry data on Android.">
+  <meta name="twitter:description" content="Read how FiberFlow handles yarn stash, pattern, project, Google Drive backup, and optional Ravelry data.">
   <meta name="twitter:image" content="https://fiberflow.techjeeper.com/assets/screenshots/home.jpg">
   <meta name="twitter:image:alt" content="FiberFlow home screen with stash stats and explore tiles">
   <title>Privacy Policy — FiberFlow</title>
   <link rel="icon" type="image/svg+xml" href="assets/FiberFlow-Icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/legal.css">
   <script data-goatcounter="https://fiberflow.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
   <script type="application/ld+json">
@@ -35,7 +36,7 @@
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Privacy Policy — FiberFlow",
-      "description": "Read how FiberFlow handles yarn stash, pattern, project, and optional Ravelry data on Android.",
+      "description": "Read how FiberFlow handles yarn stash, pattern, project, Google Drive backup, and optional Ravelry data.",
       "url": "https://fiberflow.techjeeper.com/privacy-policy.html",
       "isPartOf": {
         "@type": "WebSite",
@@ -44,89 +45,190 @@
       }
     }
   </script>
-  <style>
-    .policy-page { max-width: 42rem; margin: 0 auto; padding: 6rem 1.5rem 4rem; }
-    .policy-page h1 { font-family: "Libre Baskerville", Georgia, serif; margin-bottom: 0.5rem; }
-    .policy-page .updated { color: var(--text-muted, #666); margin-bottom: 2rem; }
-    .policy-page h2 { margin-top: 2rem; font-size: 1.125rem; }
-    .policy-page p, .policy-page li { line-height: 1.65; color: var(--text-secondary, #444); }
-    .policy-page ul { padding-left: 1.25rem; }
-    .policy-page a { color: var(--accent-teal, #2a9d8f); }
-  </style>
 </head>
 <body>
-  <main class="policy-page">
-    <p><a href="index.html">&larr; Back to FiberFlow</a></p>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 5, 2026</p>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <p>
-      FiberFlow (&ldquo;the app&rdquo;) is a crafting companion for knitters and crocheters.
-      This policy describes what information the app processes and how it is used.
-    </p>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FiberFlow home">
+        <img src="assets/FiberFlow-Icon.svg" alt="" width="40" height="40" class="brand-icon">
+        <span class="brand-name">FiberFlow</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html#showcase">Screenshots</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#download" class="nav-cta">Get the app</a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>Summary</h2>
-    <p>
-      FiberFlow stores your yarn stash, patterns, projects, and related crafting data primarily on your device.
-      Optional Ravelry integration sends data to Ravelry when you connect your account and choose to import or sync.
-      We do not operate a FiberFlow cloud server that collects your crafting library.
-    </p>
+  <main id="main" class="legal-main">
+    <article class="container legal-page">
+      <h1>Privacy Policy</h1>
+      <p class="legal-updated">Last updated: September 12, 2026</p>
 
-    <h2>Information stored on your device</h2>
-    <p>When you use FiberFlow, the app may store locally on your phone or tablet:</p>
-    <ul>
-      <li>Yarn stash entries, photos, and notes you add</li>
-      <li>Pattern files, bookmarks, annotations, and metadata</li>
-      <li>Project progress, queue order, tools inventory, and backup files you create</li>
-      <li>App preferences and optional Ravelry OAuth tokens if you connect Ravelry</li>
-    </ul>
-    <p>This data stays on your device unless you export it (for example via backup ZIP, CSV, PDF, or the Android share sheet) or use Ravelry integration.</p>
+      <p>
+        FiberFlow is an Android crafting companion for knitters and crocheters, published by TechJeeper.
+        This policy explains what information the app and this website process, including optional
+        Google Drive backup used through Google OAuth.
+      </p>
 
-    <h2>Camera and photos</h2>
-    <p>
-      If you grant camera permission, FiberFlow uses the camera to scan yarn label photos, pattern pages, and QR codes for handoff.
-      Images are processed on-device for text recognition where supported. Photos you attach are stored locally as part of your library.
-    </p>
+      <h2>Summary</h2>
+      <p>
+        Your yarn stash, patterns, projects, and related crafting data stay on your device by default.
+        Optional Ravelry integration exchanges data with Ravelry only when you connect and choose to import or sync.
+        Optional Google Drive backup uploads a FiberFlow backup ZIP to <em>your</em> Drive only when you connect
+        and choose Upload. We do not operate a FiberFlow cloud server that collects your crafting library.
+      </p>
 
-    <h2>Internet and third-party services</h2>
-    <p>FiberFlow uses the internet when you:</p>
-    <ul>
-      <li>Import patterns from websites</li>
-      <li>Connect to Ravelry via OAuth and import stash, patterns, queue, or favorites</li>
-      <li>Load pattern thumbnails or other content from external URLs you choose</li>
-    </ul>
-    <p>
-      Ravelry integration is optional and governed by
-      <a href="https://www.ravelry.com/privacy" rel="noopener noreferrer" target="_blank">Ravelry&rsquo;s privacy policy</a>.
-      When connected, the app exchanges OAuth tokens and requested library data with Ravelry&rsquo;s API according to the permissions you approve.
-    </p>
-    <p>
-      On-device text recognition may use Google ML Kit components included with the app; processing occurs on your device for supported features.
-    </p>
+      <h2>Information stored on your device</h2>
+      <p>When you use FiberFlow, the app may store locally on your phone or tablet:</p>
+      <ul>
+        <li>Yarn stash entries, photos, and notes you add</li>
+        <li>Pattern files, bookmarks, annotations, and metadata</li>
+        <li>Project progress, queue order, tools inventory, and local backup files you create</li>
+        <li>App preferences and optional Ravelry OAuth tokens if you connect Ravelry</li>
+        <li>Optional Google Drive connection details (account email and the id of the FiberFlow backup file) if you connect Drive</li>
+      </ul>
+      <p>
+        This data stays on your device unless you export it (for example via backup ZIP, CSV, PDF, or the Android share sheet),
+        use Ravelry integration, or choose to upload a backup to your Google Drive.
+      </p>
 
-    <h2>Data you share</h2>
-    <p>
-      When you use export, backup, or share features, you choose where files go (email, cloud storage, messaging apps, etc.).
-      FiberFlow does not control how those services handle data you share through the system share sheet.
-    </p>
+      <h2>Google Drive and Google user data</h2>
+      <p>
+        Google Drive backup is optional. You can use FiberFlow without connecting a Google account.
+        When you tap Connect Google Drive in Settings, FiberFlow asks Google for permission to:
+      </p>
+      <ul>
+        <li>
+          <code>https://www.googleapis.com/auth/drive.file</code> — create, read, update, and delete
+          only files and folders that FiberFlow creates or that you open with FiberFlow.
+          The app creates a folder named <code>FiberFlow</code> and a file named
+          <code>fiberflow-backup.zip</code>. FiberFlow cannot see, list, or download your other Drive files.
+        </li>
+        <li>
+          <code>email</code> — read the email address of the Google account you connect, so the app can show
+          which account is connected.
+        </li>
+      </ul>
+      <p>
+        When you tap Upload to Drive, FiberFlow writes a ZIP of your local library to that backup file.
+        The ZIP can include yarn, tools, patterns (including PDFs and photos you imported), projects,
+        annotations, and selected app preferences. The file lives in your Google account and counts
+        against your Drive storage. When you tap Restore from Drive, FiberFlow downloads that same
+        backup file and replaces the library on that device.
+      </p>
+      <p>
+        Access tokens stay on your device. FiberFlow does not run a server that receives or stores your
+        Google access tokens, email address, or Drive files. We do not sell Google user data, use it for
+        advertising, or share it with data brokers or ad platforms.
+      </p>
+      <div class="legal-callout">
+        <p>
+          FiberFlow&rsquo;s use of information received from Google APIs will adhere to the
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer" target="_blank">Google API Services User Data Policy</a>,
+          including the Limited Use requirements.
+        </p>
+      </div>
+      <p>
+        Disconnecting Drive in Settings removes the Google session from the app and does not delete the
+        backup file in your Drive. You can delete the <code>FiberFlow</code> folder or
+        <code>fiberflow-backup.zip</code> in Google Drive at any time. You can also revoke FiberFlow&rsquo;s
+        access at
+        <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer" target="_blank">Google Account permissions</a>.
+        Google&rsquo;s handling of files in your account is described in
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google&rsquo;s privacy policy</a>.
+      </p>
 
-    <h2>Data retention and deletion</h2>
-    <p>
-      You can delete individual items in the app, purge all local data from Settings, or uninstall the app to remove locally stored information.
-      Disconnecting Ravelry removes stored OAuth tokens from the app. Exported copies you saved elsewhere are your responsibility to delete.
-    </p>
+      <h2>Camera and photos</h2>
+      <p>
+        If you grant camera permission, FiberFlow uses the camera to scan yarn label photos, pattern pages, and QR codes for handoff.
+        Images are processed on-device for text recognition where supported. Photos you attach are stored locally as part of your library.
+      </p>
 
-    <h2>Children</h2>
-    <p>FiberFlow is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+      <h2>Internet and third-party services</h2>
+      <p>FiberFlow uses the internet when you:</p>
+      <ul>
+        <li>Import patterns from websites</li>
+        <li>Connect to Ravelry via OAuth and import stash, patterns, queue, favorites, or purchased PDFs you choose</li>
+        <li>Load pattern thumbnails or other content from external URLs you choose</li>
+        <li>Optionally connect Google Drive and upload or restore a FiberFlow backup you choose</li>
+        <li>Optionally send a diagnostic log from Settings</li>
+      </ul>
+      <p>
+        Ravelry integration is optional and governed by
+        <a href="https://www.ravelry.com/privacy" rel="noopener noreferrer" target="_blank">Ravelry&rsquo;s privacy policy</a>.
+        When connected, the app exchanges OAuth tokens and requested library data with Ravelry&rsquo;s API according to the permissions you approve.
+      </p>
+      <p>
+        On-device text recognition may use Google ML Kit components included with the app; processing occurs on your device for supported features.
+      </p>
+      <p>
+        If you send a diagnostic log, FiberFlow posts a sanitized report to a private TechJeeper Discord channel.
+        That report can include device model, app version, whether Ravelry or Drive is connected, and recent error messages.
+        It does not include your Ravelry password, Google password, or access tokens.
+      </p>
 
-    <h2>Changes</h2>
-    <p>We may update this policy from time to time. The &ldquo;Last updated&rdquo; date at the top will reflect the latest version.</p>
+      <h2>This website</h2>
+      <p>
+        This marketing site uses
+        <a href="https://www.goatcounter.com/" rel="noopener noreferrer" target="_blank">GoatCounter</a>
+        to count page views. GoatCounter does not use advertising cookies and is not used to sell personal information.
+        Pages may also load fonts from Google Fonts.
+      </p>
 
-    <h2>Contact</h2>
-    <p>
-      Questions about this policy can be sent through the developer contact option on the
-      <a href="https://play.google.com/store/apps/details?id=com.fiberflow.app">FiberFlow Google Play listing</a>.
-    </p>
+      <h2>Data you share</h2>
+      <p>
+        When you use export, backup, or share features, you choose where files go (email, cloud storage, messaging apps, etc.).
+        FiberFlow does not control how those services handle data you share through the system share sheet.
+      </p>
+
+      <h2>Data retention and deletion</h2>
+      <p>
+        You can delete individual items in the app, purge all local data from Settings, or uninstall the app to remove locally stored information.
+        Disconnecting Ravelry removes stored OAuth tokens from the app. Disconnecting Google Drive removes the local Google session;
+        backups you uploaded to Drive remain in your Google account until you delete them. Exported copies you saved elsewhere are your responsibility to delete.
+      </p>
+
+      <h2>Children</h2>
+      <p>FiberFlow is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy from time to time. The &ldquo;Last updated&rdquo; date at the top will reflect the latest version.</p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be sent through the developer contact option on the
+        <a href="https://play.google.com/store/apps/details?id=com.fiberflow.app">FiberFlow Google Play listing</a>
+        or in the
+        <a href="https://discord.gg/9WdGfetSRp" rel="noopener noreferrer" target="_blank">FiberFlow Discord</a>.
+      </p>
+    </article>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/FiberFlow-Icon.svg" alt="" width="32" height="32">
+        <span>FiberFlow</span>
+      </div>
+      <p class="footer-tagline">Crafting companion for knitters and crocheters.</p>
+      <p class="footer-legal">
+        <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+        <a href="tos.html">Terms of Service</a>
+      </p>
+      <p class="footer-copy">&copy; <span id="year"></span> FiberFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

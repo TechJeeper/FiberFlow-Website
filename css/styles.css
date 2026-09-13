@@ -630,6 +630,20 @@ a:hover {
   font-size: 0.9375rem;
 }
 
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+}
+
+.footer-legal a[aria-current="page"] {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 .footer-copy {
   margin: 0;
   font-size: 0.8125rem;
